@@ -20,8 +20,8 @@ rm -f /data/db/mongod.lock
 # TODO: Should shutdown mongo if it's already running
 
 # Start everything
-echo -e "\n\n=== Starting MySQL ===\n\n"
-mysqld_safe5 > /dev/null 2>&1 &
+sudo echo -e "\n\n=== Starting MySQL ===\n\n"
+sudo mysqld_safe5 > /dev/null 2>&1 &
 
 echo -e "\n\n=== Starting MongoDB ===\n\n"
 mkdir $mongo/logs
